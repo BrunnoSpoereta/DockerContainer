@@ -12,5 +12,3 @@ Este repositório contém uma coleção de arquivos em **HTML**, **PHP**, **Node
 ## 🐳 Uso com Docker
 
 Cada pasta pode conter seu próprio `Dockerfile` para subir individualmente o serviço correspondente. Exemplo de uso:
-
-```bash
