@@ -1,0 +1,7 @@
+docker build -t imagempython .
+docker run -d --name apipython -p 8084:8000 imagempython
+
+pip install -r requirements.txt
+uvicorn main:app
+
+Acesso interno: localhost:8000

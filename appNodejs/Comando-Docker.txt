@@ -1,0 +1,9 @@
+docker build -t imagemnode .
+docker run --name apinode -p 8083:3000 imagemnode
+
+Criando o projeto
+npm init
+npm install express
+node index.js
+
+Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
