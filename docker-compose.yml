@@ -21,4 +21,19 @@ services:
     ports:
       - "8056:8000"
     command: "uvicorn main:app --host 0.0.0.0 --port 8000"
+
+  app-web:
+    build: ./appWeb
+    container_name: "app-web-nginx"
+    expose:
+    - "8087"
+    ports:
+      - "8057:80"
+    command: ["nginx", "-g", "daemon off;"]
+  
+  app-php:
+    build: ./appPhp
+    container_name: app-php
+    ports:
+      - "8058:80"
     
