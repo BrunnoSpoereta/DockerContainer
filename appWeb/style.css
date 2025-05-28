@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: #e9e5e5;
     font-family: Arial, sans-serif;
@@ -11,7 +15,7 @@ body {
 
 
 header{
-    background-color: #3498db; 
+    background-color: #1d44b8; 
     margin: 0; /* Remove margens externas */
     border: none; /* Remove qualquer borda */
     box-shadow: none; /* Remove sombras caso existam */
@@ -21,8 +25,10 @@ header{
     
 }
 
+
 .header-container {
     display: flex;
+    background-color: #1d44b8;
     align-items: center;
     width: 81%; /* Ajusta a largura para um alinhamento melhor */
 }
@@ -34,13 +40,14 @@ header{
 
 .text-container {
     text-align: center;
-    flex-grow: 1; /* Faz com que o texto ocupe o espaço necessário */
+    flex-grow: 1;
+    color: white; /* Faz com que o texto ocupe o espaço necessário */
 }
 
 section {
     background-color: #fff; /* Cor de fundo da seção */
     padding: 20px; /* Espaçamento interno */
-    border: 2px  #333; /* Cor e espessura da borda */
+    border: 3px  #333; /* Cor e espessura da borda */
     border-radius: 5px; /* Bordas arredondadas */
     box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2); /* Sombra para destacar */
     width: 80%; /* Define uma largura para a seção */
@@ -48,7 +55,7 @@ section {
 }
 
 section h1 {
-    color: #3498db;
+    color: #1d44b8;
 }
 
 section p {
@@ -74,7 +81,7 @@ caption {
     font-size: 22px;
     padding: 10px;
     font-weight: bold;
-    background: #3498db;
+    background: #1d44b8;
     color: white;
 }
 
@@ -85,7 +92,7 @@ th, td {
 }
 
 th {
-    background: #3498db;
+    background: #1d44b8;
     color: white;
     font-size: 18px;
 }
@@ -97,7 +104,7 @@ tbody tr:nth-child(even) {
 tfoot td {
     text-align: center;
     font-weight: bold;
-    background: #3498db;
+    background: #1d44b8;
     color: white;
     padding: 15px;
 }
@@ -125,15 +132,15 @@ section h2{
     border: 0;
 }
 
-form{
+form {
     background-color: white;
     padding: 20px;
-    border-radius: px;
-    box-shadow: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 legend{
-    color: #3498db;
+    color: #1d44b8;
     font-size: 22px;
     font-family: Arial, sans-serif;
     font-weight: bold;
@@ -157,7 +164,7 @@ select{
 }
 
 input[type="submit"]{
-    background-color: #3498db;
+    background-color: #1d44b8;
     color: white;
     border: none;
     padding: 10px 20px;
@@ -177,7 +184,7 @@ fieldset{
 
 fieldset p{
     font-size: 20px;
-    color: #3498db;
+    color: #1d44b8;
 }
 
 .whatsapp-fixo {
@@ -209,7 +216,7 @@ fieldset p{
     margin-bottom: 10px;
     font-size: 28px;
     font-weight: bolder;
-    color: #3498db;
+    color: #1d44b8;
 }
 
 .imagem-destaque img {
@@ -250,8 +257,8 @@ fieldset p{
     position: fixed;
     top: 10px;
     left: 10px;
-    z-index: 2000;
-    background: #3498db;
+    z-index: 15;
+    background: #1d44b8;
     color: white;
     border-radius: 5px;
 }
@@ -263,10 +270,10 @@ fieldset p{
     left: -250px; /* Esconde o menu para a esquerda */
     width: 200px;
     height: 100%;
-    background-color: #3498db;
+    background-color: #1d44b8;
     padding-top: 60px;
     transition: left 0.3s ease;
-    z-index: 1000;
+    z-index: 10;
 }
 
 /* Lista dentro do menu */
@@ -282,10 +289,12 @@ fieldset p{
     padding: 15px;
     text-decoration: none;
     font-weight: bold;
+    z-index: 20;
 }
 
 .menu-lateral li a:hover {
-    background-color: #2980b9;
+    background-color: #2B58DE;
+    z-index: 20;
 }
 
 /* Quando menu ativo */
@@ -297,7 +306,7 @@ footer {
     position: fixed;
     bottom: 0;
     width: 100%;
-    background-color: #3498db;
+    background-color: #1d44b8;
     color: white;
     text-align: center;
     padding: 10px;

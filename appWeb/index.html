@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Circo Troller - Um espetáculo de entretenimento e diversão para todas as idades no Brasil.">
-    <link rel="icon" href="icons8-mac-os-16.png" type="image/x-icon">
+    <meta name="description" name="keywords" content="Circo Troller - Um espetáculo de entretenimento e diversão para todas as idades no Brasil.">
+    <link rel="icon" href="SEO-MAQUINA-DE-INGRESSOS-removebg-preview.png" type="imagem-circo">
     <link rel="stylesheet" href="style.css">
     <title>Brunno Spoereta Chiarigatti da Silva</title>
     
@@ -15,11 +15,12 @@
     </div>
     
     <!-- Menu oculto -->
-    <nav class="menu-lateral" id="menuLateral">
+    <nav class="menu-lateral" id="menuLateral" aria-label="Abrir menu de navegação">
         <ul>
             <li><a href="#fotos">Fotos do Circo</a></li>
             <li><a href="#localizacao">Localização</a></li>
             <li><a href="#atracoes">Atrações</a></li>
+            <li><a href="login.html">Login</a></li>
         </ul>
     </nav>
     
@@ -59,7 +60,7 @@
             </ul>
         </div>
     </section>
-        <table class="tabela-atracoes">
+        <table class="tabela-atracoes" id="atracoes">
             <caption><strong>Principais atrações</strong></caption>
             <thead>
                 <tr>
@@ -104,7 +105,7 @@
             </tfoot>
         </table>
     
-        <section>
+        <section id="localizacao">
             <h2>Aonde estamos localizado atualmente!</h2>
             <div class="map-container">
                 <iframe 
@@ -117,9 +118,8 @@
             </div>
         </section>
 
-        <section class="galeria">
+        <section class="fotos" id="fotos">
             <h2>Fotos do circo</h2>
-        
             <!-- Imagem destacada -->
             <div class="imagem-destaque">
                 <img src="capacircotroller13.jpg" alt="Imagem Destaque">
@@ -135,7 +135,7 @@
         </section>
     
     <section>
-        <form method="POST">
+        <form method="POST" action="#">
             <fieldset>
                 <legend>Quer saber mais? Entre em contato</legend>
                 <label for="nome">Nome</label>
@@ -193,12 +193,6 @@
         <p>&copy; <strong>Circo Troller</strong> roda todo o Brasil, em busca de levar alegria para todas as pessoas !!!</p>   
     </footer>
 
-    <script>
-        function abrirMenu() {
-            var menu = document.getElementById("menuLateral");
-            menu.classList.toggle("ativo");
-        }
-    </script>
-    
+    <script src="./script.js"></script> 
 </body>
 </html>

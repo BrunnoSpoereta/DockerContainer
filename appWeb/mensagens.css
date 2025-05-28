@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    letter-spacing: 0.5px; /* espaçamento entre letras */
+    word-spacing: 2px;     /* espaçamento entre palavras */
+}
+
+header {
+    background-color: #1d44b8;
+    color: white;
+    padding: 20px 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    position: sticky;       /* fixo no topo quando rolar */
+    top: 0;
+    z-index: 1000;
+}
+
+.header-content {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative; /* necessário para filhos com position absolute */
+}
+
+.header-content img {
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    left: 0;
+}
+
+.header-content h1 {
+    flex-grow: 1;
+    text-align: center;
+    font-size: 1.8em;
+    text-decoration: underline; /* sublinhado */
+    text-indent: 10px;          /* recuo no início do texto */
+}
+
+.voltar {
+    background-color: white;
+    color: #1d44b8;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+    border: 2px solid white;
+    margin-left: auto;
+}
+
+.voltar:hover {
+    background-color: #007bff;
+    color: white;
+    border: 2px solid #007bff;
+}
+
+main {
+    width: 90%;
+    margin: 70px auto 60px auto; /* top espaço para header fixo, bottom para footer fixo */
+}
+
+.mensagens {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.mensagem {
+    background-color: white;
+    border-left: 5px solid #007bff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    border: 1px solid #ccc;          /* border extra */
+    text-align: left;                /* alinhamento do texto */
+    position: static;                /* posição padrão */
+}
+
+.mensagem h2 {
+    color: #007bff;
+    margin-bottom: 10px;
+    text-indent: 0px;               /* recuo para título */
+}
+
+footer {
+    background-color: #1d44b8;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    position: fixed;                 /* fixado ao rodapé */
+    width: 100%;
+    bottom: 0;
+    border-top: 3px solid #007bff;   /* border superior */
+}
